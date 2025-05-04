@@ -71,9 +71,9 @@ const InputField = () => {
   return (
     <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
       <div className="space-y-4">
-        <div className="flex gap-4 w-full">
+      
           {/* first name */}
-          <div className="flex-1">
+          <div>
             <Controller
               name="firstName"
               control={control}
@@ -91,7 +91,7 @@ const InputField = () => {
             )}
           </div>
 
-          <div className="flex-1">
+          <div>
             <Controller
               name="lastName"
               control={control}
@@ -108,7 +108,7 @@ const InputField = () => {
               <p className="text-red-500">{errors.lastName.message}</p>
             )}
           </div>
-        </div>
+       
 
         <div>
           <Controller
@@ -186,15 +186,18 @@ const InputField = () => {
       <Button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-purple-600 hover:bg-[#1a237e]/90 text-white py-6"
+        className="w-full bg-[#60E5AE] hover:bg-[#46c999] text-[#1F1F1F] font-semibold py-6"
       >
-        {isLoading ? "Sign Up..." : "Registration"}
+        {isLoading ? "Registration..." : "Sign Up"}
       </Button>
 
       <div className="mt-4 text-center">
         <p className="text-sm text-gray-600">
           Already have an account?{" "}
-          <Link href="/login" className="text-purple-600 hover:underline">
+          <Link
+            href="/login"
+            className="text-purple-600 font-semibold hover:underline"
+          >
             Login
           </Link>
         </p>
