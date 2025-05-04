@@ -1,11 +1,11 @@
 // import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
 
-export default function DashboardHeader() {
+export default function TaskDetailHeader() {
   return (
     <div>
       {/* Header */}
-      <header className="bg-gradient-to-r from-emerald-800 to-emerald-950 text-white px-0 sm:px-6 py-6">
+      <header className="bg-gradient-to-r from-emerald-800 to-emerald-950 text-white px-0 sm:px-6 pt-6 pb-10">
         <div className="container mx-auto">
           {/* navbar */}
           <div className="flex items-center justify-between mb-8">
@@ -40,23 +40,6 @@ export default function DashboardHeader() {
                 </div>
                 <span>Thomas</span>
               </div>
-            </div>
-          </div>
-
-          {/* header bottom side */}
-          <div className="flex justify-between items-center">
-            <div className="md:pb-14">
-              <p className="text-emerald-300">Hi Thomas</p>
-              <h1 className="sm:text-3xl text-2xl font-bold">Welcome to Dashboard</h1>
-            </div>
-            <div className="w-64 h-32 relative">
-              {/* <Image
-                src="/placeholder.svg?height=128&width=256"
-                alt="Dashboard illustration"
-                width={256}
-                height={128}
-                className="object-contain"
-              /> */}
             </div>
           </div>
         </div>
