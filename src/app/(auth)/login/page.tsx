@@ -6,8 +6,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import Link from "next/link";
-import LoginImg from "@/assets/login/login.png";
 import Image from "next/image";
+import LoginImg from "@/assets/login/login.png";
 
 type FormValues = { email: string; password: string };
 
@@ -35,17 +35,17 @@ export default function LoginPage() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
-      <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden border border-blue-200">
+      <div className="w-full max-w-[630px] mx-auto bg-white rounded-lg shadow-lg overflow-hidden border border-blue-200">
         <div className="flex flex-col md:flex-row">
           {/* right side */}
-          <div className="w-full md:w-1/2 bg-gray-100 flex items-center justify-center p-8">
-            <div className="relative w-full h-64 md:h-80">
-              <Image
+          <div className="w-full md:w-1/2 bg-gray-100 flex items-center justify-center">
+             <div className="relative w-full h-full">
+             <Image
                 src={LoginImg}
                 alt="Login illustration"
-                fill
                 className="object-contain"
-              />
+                fill
+              />  
             </div>
           </div>
 
